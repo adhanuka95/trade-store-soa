@@ -39,7 +39,6 @@ public class TradeControllerTest {
         trade = new Trade(104L,3,"CP1","B2",new Date(),maturityDate,false);
         tradeController.addNewTrade(trade);
         Mockito.verify(tradeService, times(1)).addNewTrade(trade);
-        // Mockito.verify(tradeService, times(1)).validateMaturityDate(trade);
 
     }
 
